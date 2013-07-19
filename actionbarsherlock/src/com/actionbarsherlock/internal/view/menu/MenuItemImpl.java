@@ -486,6 +486,9 @@ public final class MenuItemImpl implements MenuItem {
 
     @Override
     public String toString() {
+        if (mTitle==null){
+            return "No title given.";
+        }
         return mTitle.toString();
     }
 
